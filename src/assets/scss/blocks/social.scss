@@ -1,0 +1,15 @@
+.social {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  // .social__item
+
+  &__item {
+    margin: 0 0.75rem;
+  }
+
+  // .social__link
+
+  &__link {
+  }
+}
