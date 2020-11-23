@@ -1,6 +1,17 @@
 .nav__list {
 	display: flex;
 }
+.nav__item{
+	position: relative;
+	&:hover{
+		.nav__link{
+			background-color: $blue;
+		}
+		> .subnav{
+			display: block;
+		}
+	}
+}
 .nav__link {
 	display: block;
 	padding: 1.35rem;
@@ -11,21 +22,22 @@
 	color: $white;
 	transition: background-color 0.2s linear;
 
-	&:hover {
-		background-color: $blue;
-	}
+	
 	&.has-subnav {
-    position: relative;
+		position: relative;
+		padding-right: 3.5rem;
+		margin-top: 2px;
 		&::after {
 			content: "";
       display: block;
       position: absolute;
       top: 50%;
-      right: 1.35rem;
+			right: 1.35rem;
+			transform: translateY(-50%);
 
 			border-style: solid;
-			border-width: 0 5px 6px 5px;
-			border-color: transparent transparent $white transparent;
+			border-width: 6px 5px 0 5px;
+			border-color:$white transparent transparent  transparent;
 		}
 	}
 }
