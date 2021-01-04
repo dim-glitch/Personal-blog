@@ -19,6 +19,7 @@ body {
 *::before {
 	box-sizing: border-box;
 }
+
 /* blocks  */
 @import "blocks/page.scss";
 @import "blocks/header.scss";
@@ -33,5 +34,8 @@ body {
 @import "blocks/btn.scss";
 @import "blocks/stories.scss";
 @import "blocks/add-post.scss";
+@import "blocks/post.scss";
+@import "blocks/embed.scss";
+@import "blocks/pagination.scss";
 
 
